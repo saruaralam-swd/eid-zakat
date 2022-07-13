@@ -3,3 +3,88 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+.text-color{
+	color: #EF233C;
+}
+
+.btn{
+	background-color: #EF233C;
+}
+
+.hero-section {
+	min-height: 500px;
+	/*background-image: url("../images/hero-section.png");*/
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1px solid black;
+}
+
+.help-section{
+	width: 80%;
+	margin: auto;
+	min-height: 800px;
+	border: 1px solid black;
+}
+
+.top-part, .bottom-part{
+	display: flex;
+}
+
+.half-width{
+	width: 40%;
+}
+
+.half-width img {
+	width: 100%;
+}
+
+.donation-section{
+	width: 80%;
+	min-height: 500px;
+	margin: auto;
+	border: 1px solid black;
+	text-align: center;
+}
+.direct-help {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 24px;
+}
+
+.half-width-direct {
+	width: 40%;
+	height: 180px;
+	background-color: #FEF4F5;
+	border-radius: 10px;
+}
+
+.pray-section {
+	width: 80%;
+	min-height: 400px;
+	margin: auto;
+	border: 1px solid black;
+	display: flex;
+}
+
+.pray-section img{
+	width: 100%;
+}
+
+
+
+.charity-section{
+	width: 80%;
+	min-height: 500px;
+	margin: auto;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.footer-section {
+  min-height: 200px;
+	background-color: #0B0D17;
+	text-align: center;
+	color: #ffffff;
+}
