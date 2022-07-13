@@ -14,7 +14,7 @@
 
 .hero-section {
 	min-height: 500px;
-	/*background-image: url("../images/hero-section.png");*/
+	background-image: url("../images/hero-section.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -66,13 +66,12 @@
 	margin: auto;
 	border: 1px solid black;
 	display: flex;
+	column-gap: 20px;
 }
 
-.pray-section img{
+.pray-img{
 	width: 100%;
 }
-
-
 
 .charity-section{
 	width: 80%;
@@ -82,8 +81,25 @@
 	border: 1px solid black;
 }
 
+.cards{
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+}
+
+.card{
+	width: 30%;
+	height: 300px;
+	
+}
+
+.card img{
+	width: 100%;
+}
+
+
 .footer-section {
-  min-height: 200px;
+  min-height: 100px;
 	background-color: #0B0D17;
 	text-align: center;
 	color: #ffffff;
