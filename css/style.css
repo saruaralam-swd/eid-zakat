@@ -1,106 +1,175 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Lobster&family=Poppins:wght@400;600&family=Roboto&display=swap');
+
+/*universal css */
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-.text-color{
-	color: #EF233C;
+body { font-family: 'Poppins', sans-serif; }
+
+/* global css */
+h1{
+	font-family: 'Inter', sans-serif;
+	font-size: 50px;
 }
 
-
-.btn{
-	background-color: #EF233C;
+p {
+	color: #848484;
+	font-size: 16px;
+	margin: 20px 0px;
 }
 
+.text-color { color: #EF233C; }
+.text-center { text-align: center;}
+.font-bold {font-size: 35px; font-weight: bold;}
+.text-white {color: #ffffff;}
+
+.btn {
+	background: #cf2a3e;
+	padding: 7px 10px;
+	display: inline-block;
+	border-radius: 5px;
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: 600;
+	border: 2px solid #cf2a3e;
+}
+
+.btn:hover {
+	background-color: #960d1d;
+	transition: background .8s ease .01s;
+}
+
+.donate:hover{
+	color: #a00c1d;
+}
+
+/*hero-section css*/
 .hero-section {
 	min-height: 500px;
-	background-image: url("../images/hero-section.png");
+	color: white;
+	padding-left: 5%;
+	background-image: url("../images/hero-section3.png");
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
-	border: 1px solid black;
-	color: white;
-}
-
-.help-section{
-	width: 80%;
-	margin: auto;
-	min-height: 800px;
-	border: 1px solid black;
-}
-
-.top-part, .bottom-part{
 	display: flex;
+	align-items: center;
+	margin-bottom: 100px;
+}
+/*hero-section css end */
+
+
+/*help-section css*/
+.help-section {
+	width: 80%;
+	min-height: 800px;
+	margin: auto;
+	margin-bottom: 100px;
 }
 
-.half-width{
+.top-part,
+.bottom-part {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.half-width {
 	width: 40%;
 }
 
 .half-width img {
 	width: 100%;
+	cursor: pointer;
 }
+/*help-section css end*/
 
-.donation-section{
+/*donation-section css*/
+.donation-section {
 	width: 80%;
 	min-height: 500px;
 	margin: auto;
-	border: 1px solid black;
-	text-align: center;
+	margin-bottom: 100px;
 }
+
 .direct-help {
 	display: flex;
 	justify-content: space-evenly;
-	margin-bottom: 24px;
+	flex-wrap: wrap;
+	row-gap: 20px;
 }
 
 .half-width-direct {
-	width: 40%;
-	height: 180px;
+	padding: 20px;
+	width: 47%;
+	text-align: left;
 	background-color: #FEF4F5;
-	border-radius: 10px;
+	border-radius: 5px;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	column-gap: 10px;
 }
 
+.img-center{
+	display: grid;
+	justify-content: center;
+}
+/*donation-section end */
+
+/*pray-section css*/
 .pray-section {
 	width: 80%;
 	min-height: 400px;
 	margin: auto;
-	border: 1px solid black;
 	display: flex;
 	column-gap: 20px;
+	margin-bottom: 100px;
 }
-.pray-img{
+
+.pray-img {
 	width: 100%;
+	border-radius: 10px;
 }
+/*pray-section end*/
 
-.charity-section{
+/*charity-section css*/
+.charity-section {
 	width: 80%;
-	min-height: 500px;
+	min-height: 600px;
 	margin: auto;
-	text-align: center;
-	border: 1px solid black;
+	margin-bottom: 100px;
 }
 
-.cards{
+.cards {
 	display: flex;
 	justify-content: space-between;
 	text-align: left;
 }
 
-.card{
+.card {
 	width: 30%;
-	height: 300px;
-	
+	min-height: 300px;
 }
 
-.card img{
+.card img {
 	width: 100%;
+	border-radius: 10px;
 }
+/*charity-section end*/
 
+/*footer section css */
 .footer-section {
-  min-height: 100px;
+	min-height: 100px;
 	background-color: #0B0D17;
-	text-align: center;
 	color: #ffffff;
 }
+
+#footer-title{
+	font-size: 18px;
+	color: #EF233C;
+	font-family: 'Lobster', cursive;
+}
+/*.footer-section end */
